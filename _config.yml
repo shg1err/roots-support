@@ -1,0 +1,16 @@
+title: Roots
+description: 暮らしの記録を、ひとつに。
+theme: minima
+lang: ja
+
+# サポート・プライバシーポリシーだけの小さなサイトなので、
+# minima が既定で出すページ一覧・SNS リンクは使わない。
+header_pages:
+  - index.md
+  - privacy.md
+
+minima:
+  skin: auto
+
+exclude:
+  - README.md

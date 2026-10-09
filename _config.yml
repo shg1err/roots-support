@@ -1,12 +1,12 @@
 title: Roots
-description: 暮らしの記録を、ひとつに。
+description: 日々の記録を、ひとつに
 theme: minima
 lang: ja
 
-# サポート・プライバシーポリシーだけの小さなサイトなので、
-# minima が既定で出すページ一覧・SNS リンクは使わない。
+# 紹介ページ（トップの index.html・プレスキット press/）は minima を使わない独自の HTML。
+# minima はサポート・プライバシーポリシーの見た目にだけ使い、既定のページ一覧・SNS リンクは使わない。
 header_pages:
-  - index.md
+  - support.md
   - privacy.md
 
 minima:

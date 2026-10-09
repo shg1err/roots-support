@@ -60,19 +60,23 @@ If Face ID fails, the App falls back to your device passcode. If that doesn't wo
 
 ### What the free plan includes
 
-All of the recording features are free. There are no limits on journal entries, notes, events, reminders, habit records, image attachments, export and import, or App Lock.
+All of the recording features are free. There are no limits on journal entries, notes, events, reminders, image attachments, export and import, or App Lock. You can create up to 3 habits.
 
 The free plan is limited as follows:
 
 - Theme colors: 4
 - Habits: up to 3
 - Integrations (Health and Weather): not available
+- Monthly and yearly entries: not available
+- Widgets: the 4 Home Screen widgets (Today's page, Up next, Habits, That day)
 
 ### What Premium adds
 
 - **All 11 theme colors**
 - **Unlimited habits**
 - **Integrations (Health and Weather)**
+- **Monthly and yearly entries** (a place to look back and set goals at the end of each month and year)
+- **All widgets** (Memo, Calendar, and Photo widgets, plus the Lock Screen widgets)
 
 Pricing is shown under "Settings > Premium Plan". A **7-day free trial** is included; cancel within the trial period and you won't be charged.
 
@@ -91,7 +95,7 @@ Subscriptions are cancelled through iOS Settings:
 
 You can also reach the same screen from "Settings > Premium Plan" inside Roots.
 
-**Cancelling does not delete your records.** Theme colors, habit count, and Integrations return to the free plan's range, but everything you have recorded stays.
+**Cancelling does not delete your records.** Theme colors, habit count, Integrations, and widgets return to the free plan's range, and you can no longer start new monthly or yearly entries, but everything you have recorded — including those entries — stays.
 
 ### I purchased Premium but it isn't active
 
@@ -106,4 +110,4 @@ Open the paywall from "Settings > Premium Plan" and tap "Restore Purchases". You
 Developer of Roots
 roots.app@outlook.jp
 
-[日本語](../)
+[日本語](../support.html)

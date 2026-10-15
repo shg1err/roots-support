@@ -18,6 +18,14 @@ For bug reports, the following details help a great deal in tracking down the ca
 - Your Roots version (shown under Settings > About)
 - Which screen you were on and what you were doing when it happened
 
+## Getting Started
+
+### How do I learn to use Roots?
+
+On first launch, you can open a **sample** Roots already filled with entries. Pick one of four people with different lives and try it on the real screens. Closing the sample discards it, so nothing mixes with your own records.
+
+To open the samples again later, go to **Settings > See samples**.
+
 ## Frequently Asked Questions
 
 ### Where is my data stored?
@@ -50,7 +58,7 @@ Note that Integrations are a Premium plan feature.
 
 ### Notifications aren't arriving
 
-Check that notifications are allowed under iPhone "Settings > Notifications > Roots". Also confirm that your events and reminders have a date and time set, and that "Settings > Daily reminder" is on in Roots.
+Check that notifications are allowed under iPhone "Settings > Notifications > Roots". Also confirm that your events and reminders have a date and time set, and, for journal reminders, that "Settings > Notifications > Daily notification" is on in Roots.
 
 ### I can't unlock App Lock
 

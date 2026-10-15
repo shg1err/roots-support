@@ -1,16 +1,15 @@
 title: Roots
 description: 日々の記録を、ひとつに
-theme: minima
 lang: ja
 
-# 紹介ページ（トップの index.html・プレスキット press/）は minima を使わない独自の HTML。
-# minima はサポート・プライバシーポリシーの見た目にだけ使い、既定のページ一覧・SNS リンクは使わない。
-header_pages:
-  - support.md
-  - privacy.md
-
-minima:
-  skin: auto
+# 紹介ページ（トップの index.html・プレスキット press/）は独自の HTML。
+# サポート・プライバシーポリシー（.md）は _layouts/default.html で同じ帯・足元・色に包む。
+# 以前は Jekyll の既定テーマ（minima）だったが、紹介ページと見た目が揃わなかったので外した（#85）。
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
 
 exclude:
   - README.md

@@ -33,7 +33,12 @@ App Store Connect 側の値とズレると事故になるうえ、地域ごと�
 
 紹介文の真実源は本体リポジトリの `docs/dev/app-store-metadata.md`（サブタイトル・プロモーションテキスト・説明）。
 ストアの文言を変えたら、`index.html` と `press/index.html` も同じ文に揃える。
-紹介ページとプレスキットは minima を使わない独自の HTML で、見た目は `assets/css/site.css` に置いている。
+
+**例外（紹介ページだけにある文）**: 約束の3つのカード・プライバシーの4項目の補足・ファーストビューの小見出しは、
+本体リポジトリの `docs/concept/positioning.md`（メッセージの階層）から書いた短い文で、ストアの説明文には無い（#85）。
+言っている事実はストアの説明文と同じものに限る。ストアの文面を見直すとき（#87）に揃える。
+紹介ページとプレスキットは独自の HTML で、見た目は `assets/css/site.css` に置いている。
+サポートとプライバシーポリシー（Markdown）も、`_layouts/default.html` で同じ帯・足元・色に包んでいる（#85 まで Jekyll の既定テーマ minima だった）。
 
 ### 5. 画像の出どころ
 
@@ -47,5 +52,8 @@ App Store Connect 側の値とズレると事故になるうえ、地域ごと�
 
 ## ローカルでの確認
 
-Jekyll（minima テーマ）で組んでいる。Markdown を編集して push すれば数分で反映される。
-紹介ページとプレスキットは素の HTML なので、`python3 -m http.server` で開けば確認できる（サポートページは Jekyll が要る）。
+Jekyll で組んでいる（テーマは使わず、`_layouts/default.html` だけ）。Markdown を編集して push すれば数分で反映される。
+紹介ページとプレスキットは素の HTML なので、`python3 -m http.server` で開けば確認できる（サポートページは Jekyll でビルドしてから開く）。
+
+- 見出しに `{#id}` を付けると飛び先になる（目次のリンクに使っている）。kramdown の書き方
+- `<div markdown="1">` の中は Markdown として読まれる（目次のカード）

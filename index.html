@@ -33,7 +33,7 @@
 <section class="hero">
   <div class="wrap">
     <div class="copy">
-      <p class="kicker">暮らしの記録アプリ</p>
+      <p class="kicker">一行から続ける、暮らしの記録</p>
       <span class="wordmark" role="img" aria-label="Roots"></span>
       <h1><span class="nb">日々の記録を、</span><span class="nb">ひとつに</span></h1>
       <p class="features">日記・メモ・リマインダー・予定・習慣</p>
@@ -46,18 +46,16 @@
 <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C240,10 420,10 720,36 C1000,60 1200,62 1440,28 L1440,70 L0,70 Z"/></svg>
 
 <main class="wrap">
-  <p class="lead">日記も、メモも、リマインダーも、予定も、習慣も。散らばりがちな毎日の記録を、Roots ひとつに集めるライフログアプリです。機能は多くても、ひとつひとつは小さくシンプルに。毎日開いても重く感じないことを大切にしています。</p>
+  <p class="lead reveal">日記も、メモも、リマインダーも、予定も、習慣も。散らばりがちな毎日の記録を、Roots ひとつに集めるライフログアプリです。機能は多くても、ひとつひとつは小さくシンプルに。毎日開いても重く感じないことを大切にしています。</p>
 
-  <section class="feature">
-    <div class="shot"><img src="assets/img/screens/today.png" alt="「きょう」の画面" loading="lazy"></div>
-    <div>
-      <span class="label">— きょう —</span>
-      <h2>まず開くのは「きょう」</h2>
-      <p>起動すると、いつも今日のページが開きます。今日の予定・リマインダー・習慣、そして日記の書きかけが1枚に並び、その日のことがひと目で分かります。ホーム画面のウィジェットからも、今日のページや次の予定、習慣の様子が見られます。</p>
-    </div>
-  </section>
+  <!-- 約束の3つ。並びと言葉は本体リポジトリの docs/concept/positioning.md「メッセージの階層」 -->
+  <ul class="promises">
+    <li class="reveal"><a href="#diary"><span class="num">1</span><h3>一行からでいい</h3><p>タイトルは要りません。気分の顔をひとつ選ぶだけの日があっても、書かない日があってもかまいません。</p></a></li>
+    <li class="reveal delay-1"><a href="#today"><span class="num">2</span><h3>その日の記録が<span class="nb">「きょう」に</span><span class="nb">まとまる</span></h3><p>予定・リマインダー・習慣、そして日記の書きかけが、1枚のページに並びます。</p></a></li>
+    <li class="reveal delay-2"><a href="#look-back"><span class="num">3</span><h3><span class="nb">過去の自分に、</span><span class="nb">ふと会える</span></h3><p>過去の日記がしおりのように挟まり、1年前の今日のことも目に入ります。</p></a></li>
+  </ul>
 
-  <section class="feature">
+  <section class="feature reveal" id="diary">
     <div class="shot"><img src="assets/img/screens/compose.png" alt="日記を書く画面。気分の顔を選べる" loading="lazy"></div>
     <div>
       <span class="label">— 日記 —</span>
@@ -66,7 +64,16 @@
     </div>
   </section>
 
-  <section class="feature">
+  <section class="feature reveal" id="today">
+    <div class="shot"><img src="assets/img/screens/today.png" alt="「きょう」の画面" loading="lazy"></div>
+    <div>
+      <span class="label">— きょう —</span>
+      <h2>まず開くのは「きょう」</h2>
+      <p>起動すると、いつも今日のページが開きます。今日の予定・リマインダー・習慣、そして日記の書きかけが1枚に並び、その日のことがひと目で分かります。ホーム画面のウィジェットからも、今日のページや次の予定、習慣の様子が見られます。</p>
+    </div>
+  </section>
+
+  <section class="feature reveal" id="look-back">
     <div class="shot"><img src="assets/img/screens/calendar.png" alt="カレンダーで日付をタップし、その日の記録が並んだ画面" loading="lazy"></div>
     <div>
       <span class="label">— 振り返り —</span>
@@ -75,7 +82,7 @@
     </div>
   </section>
 
-  <section class="feature">
+  <section class="feature reveal">
     <div class="shot"><img src="assets/img/screens/habit-detail.png" alt="習慣の詳細。続けた日が月のカレンダーで埋まっている" loading="lazy"></div>
     <div>
       <span class="label">— 習慣 —</span>
@@ -84,7 +91,7 @@
     </div>
   </section>
 
-  <section class="feature">
+  <section class="feature reveal">
     <div class="shot"><img src="assets/img/screens/today-mono.png" alt="配色をひとつの色に揃えた「きょう」の画面" loading="lazy"></div>
     <div>
       <span class="label">— 使う機能と色 —</span>
@@ -93,16 +100,19 @@
     </div>
   </section>
 
-  <section class="feature">
-    <div class="shot"><img src="assets/img/screens/settings.png" alt="設定の画面" loading="lazy"></div>
-    <div>
-      <span class="label">— プライバシー —</span>
-      <h2>記録は、あなたのもの</h2>
-      <p>書いたものはこの iPhone の中に保存され、私たちのサーバーへ送ることはありません。広告も、利用状況の収集もありません。すべての記録は1つのファイルに書き出して読み戻せるので、機種変更の控えにも、生成AIに渡して振り返る材料にも使えます。Face ID やパスコードで、アプリごと鍵をかけることもできます。</p>
-    </div>
-  </section>
+  <!-- 安心（信じる理由）。中身はストアの説明文【記録は、あなたのもの】と同じ事実だけを書く -->
+  <div class="plans reveal">
+    <span class="label">— プライバシー —</span>
+    <h2>記録は、あなたのもの</h2>
+    <ul class="trust">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="3"/><path d="M10 18.5h4"/></svg><div><strong>iPhone の中に保存</strong><span>書いたものを私たちのサーバーへ送ることはありません。</span></div></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M6 6l12 12"/></svg><div><strong>広告も、利用状況の収集もなし</strong><span>使い方を外から追いかける仕組みを入れていません。</span></div></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M4 17v2.5A1.5 1.5 0 0 0 5.5 21h13a1.5 1.5 0 0 0 1.5-1.5V17"/></svg><div><strong>1つのファイルに書き出せる</strong><span>機種変更の控えにも、生成AIに渡して振り返る材料にも。書き出しは無料です。</span></div></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10.5" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg><div><strong>アプリごと鍵をかけられる</strong><span>Face ID やパスコードで開くようにできます。</span></div></li>
+    </ul>
+  </div>
 
-  <section class="plans">
+  <section class="plans reveal">
     <h2>無料で、記録の機能はすべて使えます</h2>
     <p>日記・メモ・リマインダー・予定、書き出しと読み込み、アプリロック、写真の添付、振り返り。ここに制限はかけていません。習慣は無料で3個まで、ウィジェットはホーム画面の4種類を使えます。</p>
     <p>プレミアムプランでは次が加わります。</p>
@@ -117,7 +127,7 @@
   </section>
 </main>
 
-<section class="cta">
+<section class="cta reveal">
   <h2><span class="nb">日々の記録を、</span><span class="nb">ひとつに</span></h2>
   <a class="badge" href="https://apps.apple.com/jp/app/id6796982679"><img src="assets/img/appstore-badge-ja.svg" alt="App Store からダウンロード"></a>
   <p class="note">iPhone 専用・iOS 18 以降・基本無料</p>
@@ -134,5 +144,6 @@
     <p class="legal">© 2026 Hirotaka Shigeoka<br>Apple、App Store、App Store ロゴ、iPhone は、米国その他の国で登録された Apple Inc. の商標です。</p>
   </div>
 </footer>
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>
